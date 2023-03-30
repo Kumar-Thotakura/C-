@@ -1,0 +1,69 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+int main(){
+		string str; 
+
+		//TO TAKE INPUT FROM USER
+		cin>>str;
+
+		//TO TAKE INPUT FROM USER THROUGH   getline() FUNCTION  ==  which takes multiple strings as input from user ,where in CIN it won't work
+		getline(cin,str);
+
+		//TO FIND THE LENGHT OF STRING
+		str.size();
+		str.length();
+
+		//TO ADD(PUSH) A SINGLE CHARACTER AT THE END OF THE STRING
+		str.push_back('char');     ==>EX: str.push_back('a');
+
+		//TO REMOVE(POP) A SINGLE CHARACTER AT THE END OF THE STRING
+		str.pop_back(); 
+		
+		
+==============LOOPS IN STRING===============
+								
+								
+		//TO TRAVERSE THROUGH A STRING
+		for(auto i:str){
+        		cout<<i<<" ";
+    		}
+    
+		
+		//TO TRAVERSE THROUGH A STRING FROM    STRATING TO ENDING     USING INDEX
+		for (char i =0; i < str.size(); i++){
+			 cout<<str[i]<<" ";
+		}
+		
+		
+		//TO TRAVERSE THROUGH A STRING FROM    ENDING TO STRATING     USING INDEX
+	        for(char i=str.size()-1; i>=0; i--){
+		      	cout<<str[i]<<" ";
+	    	}
+    
+		
+		//TO TRAVERSE THROUGH A STRING FROM    STRATING TO ENDING     USING ADDRESS
+		for(auto i=str.cbegin(); i<str.cend(); i++){
+        		cout<<*i<<" ";		//SINCE WE ARE TRAVERSING USING ADDRESS ,SO WE USE  POINTER'S  TO GET VALUE
+    		}
+		
+		
+		//TO TRAVERSE THROUGH A STRING FROM    ENDING TO STRATING     USING ADDRESS
+		for(auto i=str.crbegin(); i<str.crend(); i++){
+        		cout<<*i<<" ";		//SINCE WE ARE TRAVERSING USING ADDRESS ,SO WE USE  POINTER'S  TO GET VALUE
+    		}
+		
+		
+		//TO TRAVERSE THROUGH A STRING FROM    STRATING TO ENDING     USING A   ITERATOR   AND THE ADDRESS
+    		for(string :: iterator i=str.begin(); i<str.end(); i++){
+        		cout<<*i<<" ";		//SINCE WE ARE TRAVERSING USING ADDRESS ,SO WE USE  POINTER'S  TO GET VALUE 
+    		}
+    
+		
+		//TO TRAVERSE THROUGH A STRING FROM    ENDING TO STRATING     USING A  REVERSE_ITERATOR  AND THE ADDERSS
+    		for(string :: reverse_iterator i=str.rbegin(); i<str.rend(); i++){
+        		cout<<*i<<" ";		//SINCE WE ARE TRAVERSING USING ADDRESS ,SO WE USE  POINTER'S  TO GET VALUE
+   		}
+   		
+}
