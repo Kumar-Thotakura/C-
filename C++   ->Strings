@@ -21,6 +21,12 @@ int main(){
 		//TO REMOVE(POP) A SINGLE CHARACTER AT THE END OF THE STRING
 		str.pop_back(); 
 		
+		//TO CONVERT A STRING TO INTEGER
+		stoi(string)
+		
+		//TO CONVERT A INTEGER TO STRING 
+		to_string(integer)
+		
 		
 ==============LOOPS IN STRING===============
 								
