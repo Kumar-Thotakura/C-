@@ -1,0 +1,30 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(){
+    //DECLARATION OF STACK
+    stack<int>st;
+    stack<int>st2;
+    
+    //PUSHING ELEMENTS TO STACK
+    st.push(10);
+    st.push(20);
+    st.emplace(10);
+    st.emplace(20);
+    
+    //ACCESING TOP ELEMENTS FROM STACK
+    st.top();
+    
+    //DELETING ELEMENTS FROM STACK
+    st.pop();
+    
+    //TO CHECK THE SIZE OF STACK
+    st.size();
+    
+    //TO CHECK WETHER THE STACK IS EMPTY OR NOT
+    st.empty()    //since it is a boolean function it says weather the stack is empty or not
+    
+    //TO TRANSFER DATA FROM ONE STACK TO ANOTHER STACK 
+    st2.swap(st)  //Here the stack(st) becomes zero and all the data in st transfers to the stack(st2)
+
+}
