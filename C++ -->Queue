@@ -1,0 +1,32 @@
+#include <queue>   //It CONSISTS AN HEADERFILE AS QUEUE
+
+CONSIDER QUEUE WILL BE LIKE AS :  
+                                  ------------------------
+                                    1 2 3 4 5 6 7
+                                  ------------------------
+
+
+//DECLERATION OF THE QUEUE
+queue <data_type> q;    
+
+//TO ADD NEW ELEMENTS AT THE END OF THE QUEUE
+q.push();
+q.emplace();
+
+//TO REMOVE ELEMENTS WHICH ARE AT THE START OF THE QUEUE
+q.pop();
+
+//TO SEE THE ELEMENTS AT THE TOP(OR)FRONT OF THE QUEUE
+q.front();
+
+//TO SEE THE ELEMENTS AT THE END(OR)BACK OF THE QUEUE
+q.back();
+
+//TO FIND THE SIZE OF THE QUEUE
+q.size();
+
+//TO FIND THAT WETHER THE QUEUE IS EMPTY OR NOT
+q.empty();  //since it is a boolean return type .Hence it says that the queue is empty or not
+
+//TO EXCHANGE THE DATA FROM ONE QUEUE TO ANOTHER QUEUE
+q2.swap(q1);  //the elements in q1 will transfer to q2  ;  and the elements in q2 will transfers to q1
