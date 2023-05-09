@@ -1,4 +1,5 @@
 #include<bits/stdc++.h>
+#include <stack>        //IT CONSISTS AN HEADER FILE AS STACK
 using namespace std;
 
 int main(){
