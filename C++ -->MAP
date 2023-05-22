@@ -1,0 +1,12 @@
+//DECLARATION OF MAP
+map< data_type,data_type > map_name;
+
+
+
+//IF WE WANT TO TAKE VALUE AS "SET" 
+ map<int,set<int>> myMap;
+ // Loop to push values to the set
+    for (int i = 1; i <= 5; ++i) {
+        myMap[i].insert(i * 10); //TO INSERT VALUES TO SET(which is considered as value in MAP)
+        myMap[i].insert(i * 20);
+    }
